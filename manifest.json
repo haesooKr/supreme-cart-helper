@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Supreme Cart Helper",
+  "description": "Extension to save time for filling information",
+  "version": "1.0",
+  "icons": {
+    "16": "supermarket.png",
+    "48": "supermarket48.png",
+    "128": "supermarket128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.supremenewyork.com/checkout"],
+      "persistent": false,
+      "js": ["script.js"]
+    }
+  ]
+}
